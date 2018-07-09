@@ -1,7 +1,11 @@
+// read config file
+var fs = require('fs');
+var config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
+
 // global vars
-var myBaseURL = '';
-var myUserName = '';
-var myPassWord = '';
+var myBaseURL = config["feng-url"];
+var myUserName = config["feng-user"];
+var myPassWord = config["password"];
 
 
 var myBrowser = 'firefox';
