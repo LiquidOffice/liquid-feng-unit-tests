@@ -1,0 +1,5 @@
+{
+	"feng-url" : "url to feng office installation (where the index.php resides)",
+	"feng-user": "name of feng office user",
+	"password" : "password of feng office user"
+}
