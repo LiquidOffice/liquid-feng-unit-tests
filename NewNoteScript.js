@@ -1,3 +1,9 @@
+// global vars
+var myBaseURL = '';
+var myUserName = '';
+var myPassWord = '';
+
+
 var myBrowser = 'firefox';
 
 var webdriver = require('selenium-webdriver'),
@@ -21,16 +27,16 @@ console.log('Date formatted to ' + myDate);
 
 console.log("vor Verbindung zu Feng Office");
 
-driver.get('http://.....');  // YOURURL
+driver.get(myBaseURL);  // YOURURL
 
 console.log("vor Login");
 
 driver.wait(until.elementLocated(By.id('loginUsername')), sek * 1000).then(function(elm) {
-    elm.sendKeys('.....');   // YOURusername
+    elm.sendKeys(myUserName);   // YOURusername
 });
 
 driver.wait(until.elementLocated(By.id('loginPassword')), sek * 1000).then(function(elm) {
-    elm.sendKeys('.....');   // YOURpassword
+    elm.sendKeys(myPassWord);   // YOURpassword
 });
 
 console.log("nach Passwort");
